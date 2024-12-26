@@ -1,0 +1,51 @@
+.review .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+}
+.review .box-container .box{
+  flex: 1 1 200px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  padding: 48px 32px;
+  position: relative;
+}
+.review .box-container .box .fa-quote-right{
+  position: absolute;
+  bottom: 0.5px ;right: 4px;
+  font-size: 50px;
+  color: #eee;
+}
+.review .box-container .box .stars i{
+  color: pink;
+  font-size: 32px;
+}
+.review .box-container .box p{
+  color:#999;
+  font-size: 24px;
+  line-height: 1.5;
+  padding-top: 32px;
+
+
+}
+.review .box-container .box .user{
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+}
+.review .box-container .box .user img{
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+.review .box-container .box .user h3{
+  font-size: 32px;
+  color: #333;
+}
+.review .box-container .box .user span{
+  font-size: 24px;
+  color: #999;
+}

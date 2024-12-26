@@ -1,0 +1,125 @@
+.sanphammm {
+  padding: 20px;
+  text-align: center;
+}
+
+.headinggg {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.box-containerrr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boxxx {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 280px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.boxxx:hover {
+  transform: translateY(-5px);
+}
+
+.discounttt {
+  background-color: #ff4444;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.imageee {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.imageee img {
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.imageee img:hover {
+  transform: scale(1.05);
+}
+
+.iconsss {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.boxxx:hover .iconsss {
+  display: block;
+}
+
+.cart-btnnn {
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cart-btnnn:hover {
+  background-color: #ff0000;
+}
+
+.contenttt {
+  padding: 10px 0;
+}
+
+.priceee {
+  color: #ff4444;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Media Query for tablets */
+@media (max-width: 768px) {
+  .boxxx {
+    width: 45%; /* Adjust width for tablets */
+  }
+
+  .headinggg {
+    font-size: 1.8em; /* Adjust heading size for tablets */
+  }
+}
+
+/* Media Query for mobile phones */
+@media (max-width: 480px) {
+  .box-containerrr {
+    display: block; /* Set display to block for mobile phones */
+  }
+
+  .boxxx {
+    width: 90%; /* Adjust width for mobile phones */
+    margin: 0 auto 20px auto; /* Center align boxes and add spacing at the bottom */
+  }
+
+  .headinggg {
+    font-size: 1.5em; /* Adjust heading size for mobile phones */
+  }
+}

@@ -1,0 +1,136 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff; 
+}
+
+.productlist {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0px;
+}
+
+.product-list-items {
+  margin-top: -2px;
+  list-style: none;
+  padding: 10px;
+  background-color: lightseagreen;
+}
+
+.product-list-item a {
+  text-decoration: none; 
+  color: #000; 
+}
+
+.product-list-item:hover {
+  background-color: #e0f2f1;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.product-list-items i {
+  margin-right: 10px; /* Tạo khoảng cách 10px giữa icon và chữ */
+}
+
+.product-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-list-title {
+  background-color: lightseagreen;
+  margin-top: 0px;
+  padding-top: 10px;
+  list-style: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+.product-list-item i {
+  margin-right: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 400px;
+  margin-top: -40%;
+}
+
+.search button {
+  padding: 11px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: -40%;
+  background-color: lightseagreen;
+}
+
+.contactt {
+  display: flex;
+  align-items: center;
+  background-color: #fff; 
+  margin-top: -210px;
+  padding-right: 150px;
+}
+
+.contactt i {
+  font-size: 30px;
+  color: #008000; 
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.contactt p {
+  font-family: Arial, sans-serif; 
+  font-size: 14px;
+  color: black;
+  margin: 0 10px;
+}
+
+/* Media Query for mobile phones */
+@media (max-width: 480px) {
+  .productlist {
+    display: none; /* Ẩn danh mục sản phẩm */
+  }
+
+  .search {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    justify-content: center; /* Căn giữa thanh tìm kiếm */
+  }
+
+  .search input {
+    width: 80%; /* Giảm chiều rộng của input */
+    margin-top: 0; /* Xóa margin top */
+  }
+
+  .search button {
+    width: 20%; /* Giảm chiều rộng của button */
+    margin-top: 0; /* Xóa margin top */
+  }
+
+  .contactt {
+    flex-direction: column; /* Chuyển đổi flex direction */
+    padding: 10px; /* Thêm padding */
+    text-align: center; /* Căn giữa văn bản */
+  }
+
+  .contactt i {
+    margin-bottom: 10px; /* Thêm khoảng cách bên dưới icon */
+  }
+}

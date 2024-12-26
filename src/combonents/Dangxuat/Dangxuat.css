@@ -1,0 +1,21 @@
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao toàn màn hình */
+  }
+  
+  .logout-button {
+    font-size: 24px; /* Kích thước chữ lớn */
+    padding: 10px 20px; /* Tăng khoảng cách bên trong */
+    background-color: #007BFF; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Góc bo tròn */
+    cursor: pointer; /* Con trỏ dạng tay khi di chuột lên */
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3; /* Thay đổi màu nền khi hover */
+  }
+  

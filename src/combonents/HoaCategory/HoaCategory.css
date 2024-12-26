@@ -1,0 +1,165 @@
+/* Các lớp CSS hiện tại của bạn */
+
+/* Lớp CSS cho banner */
+.banner {
+  height: 450px;
+  margin: 30px auto;
+  background-size: contain;
+  position: relative;
+  margin-left: 270px;
+  margin-top: -200px;
+  margin-bottom: 150px;
+}
+
+.product-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 23%;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+}
+
+.product-info {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.product button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #3e8e41;
+}
+
+.bordered-content {
+  margin-top: 20px;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.address-list {
+  list-style: none;
+  padding: 0;
+}
+
+.address-list li::before {
+  content: "● ";
+  margin-right: 5px;
+}
+
+.show-more {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Media Query for tablets */
+@media (max-width: 768px) {
+  .banner {
+    margin-left: 0;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+
+  .product {
+    width: 48%; /* Adjust width for tablets */
+  }
+
+  .filter-bar {
+    flex-direction: column; /* Stack filter bar items vertically */
+  }
+}
+
+/* Media Query for mobile phones */
+@media (max-width: 480px) {
+  .banner {
+    display: none; /* Ẩn banner */
+  }
+
+  .product-container {
+    display: none; /* Ẩn danh mục sản phẩm */
+  }
+
+  .filter-bar {
+    flex-direction: column; /* Stack filter bar items vertically */
+    width: 100%;
+  }
+
+  .search {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    justify-content: center; /* Căn giữa thanh tìm kiếm */
+  }
+
+  .search input {
+    width: 80%; /* Giảm chiều rộng của input */
+    margin-top: 0; /* Xóa margin top */
+  }
+
+  .search button {
+    width: 20%; /* Giảm chiều rộng của button */
+    margin-top: 0; /* Xóa margin top */
+  }
+}

@@ -1,0 +1,93 @@
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer .box-containerr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  width: 100%; /* Đảm bảo box-container chiếm 100% chiều rộng */
+}
+
+.footer .box-containerr .boxx h3 {
+  font-size: 25px;
+  color: black;
+}
+
+.footer .box-containerr .boxx h3 i {
+  color: orange;
+}
+
+.footer .box-containerr .boxx .links {
+  display: block;
+  font-size: 15px;
+  color: black;
+  padding: 1rem 0;
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.footer .box-containerr .boxx .links i {
+  color: orange;
+  padding-right: .5rem;
+}
+
+.footer .box-containerr .boxx .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-containerr .boxx p {
+  line-height: 1.8;
+  font-size: 14px;
+  color: black;
+  padding: 1rem 0;
+}
+
+.footer .box-containerr .boxx .share a {
+  height: 4rem;
+  width: 3rem;
+  line-height: 4rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  color: black;
+  margin-left: .2rem;
+  background: #eee;
+  text-align: center;
+}
+
+.footer .box-containerr .boxx .share a:hover {
+  background: pink;
+  color: #fff;
+}
+
+.footer .box-containerr .boxx .payment-img {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .footer .box-containerr {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .footer .box-containerr .boxx {
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer .box-containerr {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .box-containerr .boxx {
+    padding: 10px;
+  }
+}

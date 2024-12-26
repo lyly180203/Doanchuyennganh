@@ -1,0 +1,5 @@
+
+Database:	lav20242_flower
+Host:	localhost
+Username:	lav20242_flower
+Password:	JRsEKtzZMFuc5DnuQNQk
