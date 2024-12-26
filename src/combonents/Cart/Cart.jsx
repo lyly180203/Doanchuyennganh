@@ -229,7 +229,7 @@ const Cart = () => {
               </div>
             </>
           )}
-        <h5>Danh sách đơn hàng đã đặt</h5>
+        <h5>Lịch sử đơn hàng đã đặt</h5>
         <table className="table table-bordered table-striped">
                 <thead style={{ color: 'blue' }}>
                   <tr>

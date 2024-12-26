@@ -149,10 +149,10 @@ const DatHangCart = () => {
           onChange={(e) => setPaymentMethod(e.target.value)}
         >
           <option value="">Hình thức</option>
-          <option value="VIETQR">VietQR</option>
+          {/* <option value="VIETQR">VietQR</option> */}
           <option value="Tiền mặt">Tiền mặt</option>
         </Form.Select>
-        <h5 className="font-weight-bold">Vận chuyển: {totalPrice <= 100000 ? "50.000VNĐ" : "Miễn phí"}</h5>
+        {/* <h5 className="font-weight-bold">Vận chuyển: {totalPrice <= 100000 ? "50.000VNĐ" : "Miễn phí"}</h5> */}
 
         <button
           className="btn btn-primary mt-2"
